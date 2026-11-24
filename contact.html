@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Personal Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">MyPortfolio</a>
+            <div class="nav-controls">
+                <button id="themeToggle" class="icon-btn" type="button">Dark Mode</button>
+                <button id="menuToggle" class="icon-btn menu-toggle" type="button" aria-label="Toggle menu">Menu</button>
+            </div>
+            <ul id="navLinks" class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="page-header">
+            <h1>Contact Me</h1>
+            <p>Feel free to reach out for industrial training placements, collaborations, or project inquiries.</p>
+        </div>
+
+        <div class="grid-2">
+            <article class="card">
+                <h2>Send a Message</h2>
+                <form id="contactForm" novalidate>
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                        <small id="nameError" class="error-msg"></small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                        <small id="emailError" class="error-msg"></small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="Industrial Training / Inquiry" required>
+                        <small id="subjectError" class="error-msg"></small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+                        <small id="messageError" class="error-msg"></small>
+                    </div>
+
+                    <button type="submit" class="btn primary">Send Message</button>
+                    <div id="formSuccess" class="success-banner">
+                        Thank you! Your message has been validated and submitted successfully.
+                    </div>
+                </form>
+            </article>
+
+            <article class="card">
+                <h2>Direct Contact &amp; Links</h2>
+                <p style="margin-bottom: 1rem;">
+                    You can also connect with me directly through my professional email and developer profiles:
+                </p>
+                <ul>
+                    <li><strong>Email:</strong> <a href="mailto:aiman.amsyar05@gmail.com">aiman.amsyar05@gmail.com</a></li>
+                    <li><strong>GitHub:</strong> <a href="https://github.com/" target="_blank" rel="noopener">github.com/yourusername</a></li>
+                    <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/" target="_blank" rel="noopener">linkedin.com/in/yourusername</a></li>
+                    <li><strong>Location:</strong> Pahang / Selangor, Malaysia</li>
+                </ul>
+            </article>
+        </div>
+    </main>
+
+    <button id="scrollTopBtn" type="button" title="Back to top">&uarr;</button>
+
+    <footer>
+        <p>&copy; <span id="year">2026</span> Aiman Nabil Amsyar Bin Rahim. All rights reserved. |
+            <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="mailto:aiman.amsyar05@gmail.com">Email</a>
+        </p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Personal Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">MyPortfolio</a>
+            <div class="nav-controls">
+                <button id="themeToggle" class="icon-btn" type="button">Dark Mode</button>
+                <button id="menuToggle" class="icon-btn menu-toggle" type="button" aria-label="Toggle menu">Menu</button>
+            </div>
+            <ul id="navLinks" class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="page-header">
+            <h1>Projects &amp; Work Samples</h1>
+            <p>Selected hardware, IoT, and web application projects built during my studies.</p>
+        </div>
+
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all" type="button">All Projects</button>
+            <button class="filter-btn" data-filter="iot" type="button">IoT &amp; Electronics</button>
+            <button class="filter-btn" data-filter="web" type="button">Web &amp; Software</button>
+        </div>
+
+        <div class="grid-3">
+            <article class="card project-card" data-category="iot">
+                <span class="badge">IoT &amp; Electronics</span>
+                <h2>CHICKLINK: IoT Smart Feeding &amp; Watering System</h2>
+                <p>
+                    <strong>Problem:</strong> Manual checking of poultry feed and water levels is time-consuming and prone to delayed refilling.
+                </p>
+                <div class="project-meta">
+                    <p><strong>Role:</strong> Hardware &amp; Firmware Developer</p>
+                    <p><strong>Tools:</strong> ESP32, HX711 Load Cell, HC-SR04 Ultrasonic Sensor, Telegram Bot, Google Sheets</p>
+                    <p><strong>Outcome:</strong> Real-time alerts sent via Telegram with automated 24-hour level logging.</p>
+                </div>
+                <a href="https://github.com/" class="btn secondary" target="_blank" rel="noopener">View Repository</a>
+            </article>
+
+            <article class="card project-card" data-category="web">
+                <span class="badge">Web &amp; Software</span>
+                <h2>Pump Station P-101 Monitoring Interface</h2>
+                <p>
+                    <strong>Problem:</strong> Operators need a clear browser-based control panel to monitor pump status and sensor states.
+                </p>
+                <div class="project-meta">
+                    <p><strong>Role:</strong> Front-End Web Developer</p>
+                    <p><strong>Tools:</strong> HTML5, CSS3, JavaScript, Visual Studio Code</p>
+                    <p><strong>Outcome:</strong> Interactive simulated industrial dashboard with real-time state toggles.</p>
+                </div>
+                <a href="https://github.com/" class="btn secondary" target="_blank" rel="noopener">View Repository</a>
+            </article>
+
+            <article class="card project-card" data-category="iot">
+                <span class="badge">IoT &amp; Electronics</span>
+                <h2>Smart Water Tank Volume Monitor &amp; PCB Design</h2>
+                <p>
+                    <strong>Problem:</strong> Lack of visibility on water storage volume leads to unexpected supply shortages.
+                </p>
+                <div class="project-meta">
+                    <p><strong>Role:</strong> Circuit &amp; Embedded Designer</p>
+                    <p><strong>Tools:</strong> ESP-WROOM-32, HC-SR04, I2C LCD, BME280, EasyEDA</p>
+                    <p><strong>Outcome:</strong> Accurate ultrasonic distance-to-volume calculation displayed on I2C LCD with custom PCB schematic.</p>
+                </div>
+                <a href="https://github.com/" class="btn secondary" target="_blank" rel="noopener">View Repository</a>
+            </article>
+        </div>
+    </main>
+
+    <button id="scrollTopBtn" type="button" title="Back to top">&uarr;</button>
+
+    <footer>
+        <p>&copy; <span id="year">2026</span> Your Name. All rights reserved. |
+            <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="mailto:yourname@example.com">Email</a>
+        </p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills | Personal Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">MyPortfolio</a>
+            <div class="nav-controls">
+                <button id="themeToggle" class="icon-btn" type="button">Dark Mode</button>
+                <button id="menuToggle" class="icon-btn menu-toggle" type="button" aria-label="Toggle menu">Menu</button>
+            </div>
+            <ul id="navLinks" class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="skills.html" class="active">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="page-header">
+            <h1>Technical &amp; Soft Skills</h1>
+            <p>Core competencies across embedded electronics, web development, and teamwork.</p>
+        </div>
+
+        <div class="grid-2">
+            <article class="card">
+                <h2>Technical Proficiency</h2>
+                <div class="skill-item">
+                    <div class="skill-header"><span>HTML5, CSS3 &amp; JavaScript</span><span>85%</span></div>
+                    <div class="progress-bar"><div class="progress-fill" data-width="85%"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-header"><span>Embedded IoT (ESP32, Arduino, Sensors)</span><span>90%</span></div>
+                    <div class="progress-bar"><div class="progress-fill" data-width="90%"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-header"><span>PCB &amp; Circuit Design (EasyEDA, Fritzing)</span><span>80%</span></div>
+                    <div class="progress-bar"><div class="progress-fill" data-width="80%"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-header"><span>Database &amp; Python (MySQL, Streamlit)</span><span>75%</span></div>
+                    <div class="progress-bar"><div class="progress-fill" data-width="75%"></div></div>
+                </div>
+            </article>
+
+            <article class="card">
+                <h2>Soft Skills &amp; Languages</h2>
+                <ul>
+                    <li><strong>Systematic Troubleshooting:</strong> Isolating hardware wiring, power supply, and software logic faults methodically.</li>
+                    <li><strong>Team Collaboration:</strong> Coordinating group tasks, field visits, and technical documentation.</li>
+                    <li><strong>Technical Communication:</strong> Presenting system prototypes and writing structured engineering reports.</li>
+                    <li><strong>Languages:</strong> Bahasa Melayu (Native), English (Professional Working Proficiency).</li>
+                </ul>
+            </article>
+        </div>
+
+        <section class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Domain</th>
+                        <th>Tools / Technologies</th>
+                        <th>Proficiency Level</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Web Application Development</td>
+                        <td>HTML5, CSS3, JavaScript, Visual Studio Code, Git/GitHub</td>
+                        <td>Intermediate</td>
+                    </tr>
+                    <tr>
+                        <td>Embedded &amp; IoT Systems</td>
+                        <td>ESP32, Arduino IDE, HX711, HC-SR04, BME280, Telegram Bot API</td>
+                        <td>Advanced</td>
+                    </tr>
+                    <tr>
+                        <td>Electronics &amp; Schematic CAD</td>
+                        <td>EasyEDA, Fritzing, Oscilloscope, Multimeter</td>
+                        <td>Intermediate</td>
+                    </tr>
+                    <tr>
+                        <td>Database &amp; Data Tools</td>
+                        <td>MySQL Workbench, Python (Streamlit, Pandas), Microsoft Excel</td>
+                        <td>Intermediate</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <button id="scrollTopBtn" type="button" title="Back to top">&uarr;</button>
+
+    <footer>
+        <p>&copy; <span id="year">2026</span> Your Name. All rights reserved. |
+            <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="mailto:yourname@example.com">Email</a>
+        </p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

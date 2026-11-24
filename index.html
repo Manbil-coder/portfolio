@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Personal Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="brand-group">
+                <button id="profileAvatarTrigger" class="nav-avatar" type="button" aria-label="View profile photo">
+                    <img src="images/GAMBAR.jpg" alt="Portrait of AIMAN NABIL AMSYAR BIN RAHIM">
+                </button>
+                <a href="index.html" class="logo">MY PORTFOLIO</a>
+            </div>
+
+            <div class="nav-controls">
+                <button id="themeToggle" class="icon-btn" type="button">Dark Mode</button>
+                <button id="menuToggle" class="icon-btn menu-toggle" type="button" aria-label="Toggle menu">Menu</button>
+            </div>
+
+            <ul id="navLinks" class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <p id="greeting">Welcome to my portfolio.</p>
+                <h1>Hi, I'm <span class="highlight">AIMAN NABIL AMSYAR BIN RAHIM</span></h1>
+                <p id="tagline">Aspiring Industrial Electronics &amp; IoT Technologist</p>
+                <p class="intro">
+                    I am an Engineering Technology student at Universiti Malaysia Pahang Al-Sultan Abdullah (UMPSA),
+                    passionate about embedded IoT systems, circuit prototyping, and responsive web applications.
+                </p>
+                <div class="cta-buttons">
+                    <a href="projects.html" class="btn primary">View My Work</a>
+                    <a href="docs/resume.pdf" class="btn secondary" download>Download CV</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="container">
+            <div class="grid-3">
+                <article class="card stat-card">
+                    <h2>3+</h2>
+                    <p>IoT, Hardware &amp; Web Projects</p>
+                </article>
+                <article class="card stat-card">
+                    <h2>ESP32 &amp; Web</h2>
+                    <p>Embedded Sensors &amp; Full-Stack Basics</p>
+                </article>
+                <article class="card stat-card">
+                    <h2>UMPSA</h2>
+                    <p>Faculty of Electrical &amp; Electronics Engineering Technology</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <div id="avatarModal" class="avatar-modal" aria-hidden="true">
+        <div class="avatar-modal-content">
+            <button id="closeAvatarModal" class="avatar-modal-close" type="button" aria-label="Close photo">&times;</button>
+            <img id="avatarModalImg" src="" alt="Enlarged profile photo">
+            <p class="avatar-modal-caption">AIMAN NABIL AMSYAR BIN RAHIM</p>
+        </div>
+    </div>
+
+    <button id="scrollTopBtn" type="button" title="Back to top">&uarr;</button>
+
+    <footer>
+        <p>&copy; <span id="year">2026</span> Aiman Nabil Amsyar Bin Rahim . All rights reserved. |
+            <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="mailto:yourname@example.com">Email</a>
+        </p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

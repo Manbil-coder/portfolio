@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me | Personal Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">MyPortfolio</a>
+            <div class="nav-controls">
+                <button id="themeToggle" class="icon-btn" type="button">Dark Mode</button>
+                <button id="menuToggle" class="icon-btn menu-toggle" type="button" aria-label="Toggle menu">Menu</button>
+            </div>
+            <ul id="navLinks" class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About Me</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="page-header">
+            <h1>About Me</h1>
+            <p>My background, engineering mindset, and career aspirations.</p>
+        </div>
+
+        <div class="grid-2">
+            <article class="card">
+                <h2>Personal Story &amp; Values</h2>
+                <p>
+                    I am currently pursuing my studies in Electrical and Electronics Engineering Technology at
+                    Universiti Malaysia Pahang Al-Sultan Abdullah (UMPSA). I enjoy bridging physical hardware
+                    sensors with clear digital interfaces so users can monitor real-world systems efficiently.
+                </p>
+                <div id="moreText" class="hidden" style="margin-top: 0.8rem;">
+                    <p>
+                        My approach to problem-solving relies on step-by-step testing: verifying power rails,
+                        validating sensor readings, and structuring clean, maintainable software. Beyond lab work,
+                        I am keen on entrepreneurship and continuous self-improvement.
+                    </p>
+                </div>
+                <div style="margin-top: 1rem; display: flex; gap: 0.75rem; flex-wrap: wrap;">
+                    <button id="readMoreBtn" class="btn secondary" type="button">Read More</button>
+                    <a href="docs/resume.pdf" class="btn primary" download>Download Resume (PDF)</a>
+                </div>
+            </article>
+
+            <article class="card">
+                <h2>Career Goals &amp; Interests</h2>
+                <ul>
+                    <li><strong>Short-Term Goal:</strong> Complete industrial training in electronics, automation, or IoT application development.</li>
+                    <li><strong>Long-Term Goal:</strong> Become a competent Engineering Technologist building reliable smart monitoring systems.</li>
+                    <li><strong>Core Values:</strong> Accountability, systematic troubleshooting, and continuous learning.</li>
+                    <li><strong>Interests:</strong> Microcontroller prototyping, PCB design, web dashboards, and database systems.</li>
+                </ul>
+            </article>
+        </div>
+
+        <section style="margin-top: 2rem;">
+            <article class="card">
+                <h2>Education Timeline</h2>
+                <ol>
+                    <li><strong>Universiti Malaysia Pahang Al-Sultan Abdullah (UMPSA)</strong> — Bachelor of Engineering Technology (Electrical &amp; Electronics)</li>
+                    <li><strong>Kolej Vokasional Chenor (KV Chenor)</strong> — Vocational Diploma / Technical Foundation in Electronics &amp; IoT Systems</li>
+                </ol>
+            </article>
+        </section>
+    </main>
+
+    <button id="scrollTopBtn" type="button" title="Back to top">&uarr;</button>
+
+    <footer>
+        <p>&copy; <span id="year">2026</span> Your Name. All rights reserved. |
+            <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="mailto:yourname@example.com">Email</a>
+        </p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
